@@ -1,0 +1,9 @@
+
+    <ul>
+        <!-- l 'objet sur lequel on itere est listusers' obj aura la valeur listusers0 puis listusers1 pui.... obj est une variable de type let-->
+      <li *ngFor= "let user of users" class="cliquable" (click)="selectUser(user)">
+         <!--  <li *ngFor= "let user of listusers">
+          <a (click)="selectUser(user)" href=#></a>-->
+        {{ user.name }}   
+      </li>
+   </ul>  
